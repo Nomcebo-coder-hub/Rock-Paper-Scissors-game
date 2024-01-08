@@ -1,3 +1,7 @@
 header {
   background: white;
 }
+
+header h1 {
+  color: #262632;
+}
