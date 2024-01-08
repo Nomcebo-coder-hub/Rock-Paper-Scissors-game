@@ -39,3 +39,9 @@ header h1 {
   top: 30px;
   left: -25px;
 }
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  left: -30px;
+}
