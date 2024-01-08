@@ -4,4 +4,6 @@ header {
 
 header h1 {
   color: #262632;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
