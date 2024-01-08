@@ -1,9 +1,10 @@
 header {
   background: white;
+  padding: 20px;
 }
 
 header h1 {
-  color: #262632;
+  color: #25272e;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
