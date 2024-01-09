@@ -70,3 +70,8 @@ header h1 {
   margin: 50px 0;
   text-align: center;
 }
+
+.choice:hover {
+  cursor: pointer;
+  background: white;
+}
