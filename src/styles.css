@@ -75,3 +75,12 @@ header h1 {
   cursor: pointer;
   background: white;
 }
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
