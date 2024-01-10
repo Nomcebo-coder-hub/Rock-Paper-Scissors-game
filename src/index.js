@@ -26,7 +26,7 @@ function win(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}(user) beats ${convertToWord(computerChoice)}(comp) + . You win! 🔥`;
+  )}(user) beats ${convertToWord(computerChoice)}(comp) . You win! 🔥`;
 }
 
 function lose(userChoice, computerChoice) {
@@ -35,7 +35,7 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}(user) beats ${convertToWord(computerChoice)}(comp) + . You win! 🔥`;
+  )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost 🙁`;
 }
 
 function draw() {
