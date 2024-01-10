@@ -3,7 +3,7 @@ let computerScore = 0;
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const result_p = document.querySelector(".result-p");
+const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("r");
 const paper_div = document.getElementById("p");
 const scissors_div = document.getElementById("s");
@@ -25,7 +25,7 @@ function win(userChoice, computerChoice) {
 function lose() {}
 
 function draw() {
-  console.log(DRAWWW);
+  console.log("DRAWWW");
 }
 
 function game(userChoice) {
