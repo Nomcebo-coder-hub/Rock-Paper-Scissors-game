@@ -26,17 +26,17 @@ function game(userChoice) {
     case "rs":
     case "pr":
     case "sp":
-      console.log("USER WINS.");
+      win(userChoice, computerChoice);
       break;
     case "rp":
     case "ps":
     case "sr":
-      console.log("USER LOSES.");
+      lose(userChoice, computerChoice);
       break;
     case "rr":
     case "pp":
     case "ss":
-      console.log("It's a draw.");
+      draw(userChoice, computerChoice);
       break;
   }
 }
