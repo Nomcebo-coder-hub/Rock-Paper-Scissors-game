@@ -30,7 +30,7 @@ function win(userChoice, computerChoice) {
 }
 
 function lose(userChoice, computerChoice) {
-  userScore++;
+  computerScore++;
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(
