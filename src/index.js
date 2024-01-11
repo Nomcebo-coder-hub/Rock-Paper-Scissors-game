@@ -42,7 +42,10 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(
     userChoice
   )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost 🙁`;
-  document.getElementById(userChoice).classList.add("red-glow");
+  userChoice_div.classList.add("red-glow");
+  setTimeout(function () {
+    userChoice_div.classList.remove("red-glow");
+  }, 300);
 }
 
 function draw(userChoice, computerChoice) {
