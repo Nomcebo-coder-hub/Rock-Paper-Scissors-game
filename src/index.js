@@ -38,8 +38,13 @@ function lose(userChoice, computerChoice) {
   )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost 🙁`;
 }
 
-function draw() {
-  console.log("DRAWWW");
+function draw(userChoice, computerChoice) {
+  userScore++;
+  userScore_span.innerHTML = userScore;
+  computerScore_span.innerHTML = computerScore;
+  result_p.innerHTML = `${convertToWord(
+    userChoice
+  )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost 🙁`;
 }
 
 function game(userChoice) {
