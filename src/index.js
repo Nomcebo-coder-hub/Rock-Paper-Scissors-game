@@ -36,6 +36,7 @@ function win(userChoice, computerChoice) {
 
 function lose(userChoice, computerChoice) {
   computerScore++;
+  const userChoice_div = document.getElementById(userChoice);
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(
@@ -45,6 +46,7 @@ function lose(userChoice, computerChoice) {
 }
 
 function draw(userChoice, computerChoice) {
+  const userChoice_div = document.getElementById(userChoice);
   result_p.innerHTML = `${convertToWord(
     userChoice
   )}(user) equals ${convertToWord(computerChoice)}(comp) . It's a draw.`;
