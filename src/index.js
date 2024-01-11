@@ -41,7 +41,7 @@ function lose(userChoice, computerChoice) {
 function draw(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}(user) equals ${convertToWord(computerChoice)}(comp) . It's a draw`;
+  )}(user) equals ${convertToWord(computerChoice)}(comp) . It's a draw.`;
 }
 
 function game(userChoice) {
