@@ -53,7 +53,10 @@ function draw(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(
     userChoice
   )}(user) equals ${convertToWord(computerChoice)}(comp) . It's a draw.`;
-  document.getElementById(userChoice).classList.add("gray-glow");
+  userChoice_div.classList.add("gray-glow");
+  setTimeout(function () {
+    userChoice_div.classList.remove("gray-glow");
+  }, 300);
 }
 
 function game(userChoice) {
