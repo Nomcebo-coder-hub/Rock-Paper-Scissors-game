@@ -22,12 +22,16 @@ function convertToWord(letter) {
 
 function win(userChoice, computerChoice) {
   userScore++;
+  const userChoice_div = document.getElementById(userChoice);
   userScore_span.innerHTML = userScore;
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(
     userChoice
   )}(user) beats ${convertToWord(computerChoice)}(comp) . You win! 🔥`;
-  document.getElementById(userChoice).classList.add("green-glow");
+  userChoice_div.classList.add("green-glow");
+  setTimeout(function () {
+    userChoice_div.classList.remove("green-glow");
+  }, 300);
 }
 
 function lose(userChoice, computerChoice) {
