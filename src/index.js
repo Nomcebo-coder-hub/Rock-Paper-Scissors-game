@@ -37,12 +37,14 @@ function lose(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(
     userChoice
   )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost 🙁`;
+  document.getElementById(userChoice).classList.add("red-glow");
 }
 
 function draw(userChoice, computerChoice) {
   result_p.innerHTML = `${convertToWord(
     userChoice
   )}(user) equals ${convertToWord(computerChoice)}(comp) . It's a draw.`;
+  document.getElementById(userChoice).classList.add("gray-glow");
 }
 
 function game(userChoice) {
