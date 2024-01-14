@@ -39,7 +39,7 @@ function lose(userChoice, computerChoice) {
   computerScore_span.innerHTML = computerScore;
   result_p.innerHTML = `${convertToWord(
     userChoice
-  )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost 🙁`;
+  )}(user) loses to ${convertToWord(computerChoice)}(comp) . You lost. 🙁`;
   userChoice_div.classList.add("red-glow");
   setTimeout(() => userChoice_div.classList.remove("red-glow"), 300);
 }
